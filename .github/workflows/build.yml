@@ -34,28 +34,28 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (Jorne Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=jorne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b nrfmicro_13 -- -DSHIELD=jorne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Jorne DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+        run: cat -n build/zephyr/nrfmicro_13.dts.pre.tmp
       - name: Jorne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 jorne_left_nice_nano.uf2
+        run: cp build/zephyr/zmk.uf2 jorne_left_nrfmicro_13.uf2
       - name: Archive (Jorne Left)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: jorne_left_nice_nano.uf2
+          path: jorne_left_nrfmicro_13.uf2
       - name: West Build (Jorne Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=jorne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nrfmicro_13 -- -DSHIELD=jorne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Jorne Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 jorne_right_nice_nano.uf2
+        run: cp build/zephyr/zmk.uf2 jorne_right_nrfmicro_13.uf2
       - name: Archive (Jorne Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: jorne_right_nice_nano.uf2
+          path: jorne_right_nrfmicro_13.uf2
