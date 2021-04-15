@@ -19,7 +19,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
 // |  GUI |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  [   | GUI/] |
 //        | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |CTRL/'|
 //        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
@@ -46,7 +46,7 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
 // |     | NMLK |  /  |  7  |  8  |  9  |  -  |   | VOLU| HOME| PRSC| PGUP| SCLK| CLCK|     |
 //       | CTRL |  *  |  4  |  5  |  6  |  +  |   | RGHT| DOWN|  UP | RGHT| INS | APP |
 //       |      |  0  |  1  |  2  |  3  |  .  |   | VOLD| END |  MUT| PGDN| PAUS|     |
@@ -59,15 +59,15 @@
                         >;
                 };
                 adjust_layer {
-// -----------------------------------------------------------------------------------------
-// | RST | BLDR    |        |     |     |     |     |   |     |     |     |     |     | BLDR | RST |
-//       | BTCLR   | BT0    | BT1 | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
-//       | RGB_TOG | RGB_EFF|     |     |     |     |   |     |     |     |     |     |      |
-//                          |     |     |     |   |     |     |     |
+// ----------------------------------------------------------------------------------------------------
+// | RST | BLDR    |        |        |     |     |     |   |     |     |     |     |     | BLDR | RST |
+//       | BTCLR   | BT0    | BT1    | BT2 | BT3 | BT4 |   | BT4 | BT3 | BT2 | BT1 | BT0 | BTCLR|
+//       | RGB_TOG | RGB_EFF| K_SLEEP|     |     |     |   |     |     |     |     |     |      |
+//                          |        |     |     |     |   |     |     |
                         bindings = <
    &reset &bootloader  &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &bootloader &reset
           &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0  &bt BT_CLR
-          &none        &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
+          &rgb_ug RGB_TOG   &none        &none        &none        &none        &none              &none        &none        &none        &none        &none         &none
                                                                     &trans &none &trans   &trans &none &trans
                         >;
                 };
