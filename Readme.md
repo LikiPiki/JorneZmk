@@ -4,7 +4,7 @@
 
 **Current keymap is unstable. I'am working on it now. Plz, wait first release**
 
-Photos
+![jorneCover](https://user-images.githubusercontent.com/8510866/114900811-e26d0300-9e1c-11eb-8f49-775fdb61ca20.jpeg)
 
 ## Features
 - Vim-like mode
