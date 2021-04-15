@@ -1,6 +1,6 @@
 # Jorne Classic 2.1 with nRFMicro 1.4
 
-42 keys bluetooth split mechanical keyboard.
+44 keys bluetooth split mechanical keyboard.
 
 **Current keymap is unstable. I'am working on it now. Plz, wait first release**
 
