@@ -6,7 +6,8 @@
 
 Photos
 
-## Keymap enchantments
+## Features
+- Sleep mode
 - Vim-like mode
 - Support for bspwm (change screens) [in progress]
 
