@@ -7,8 +7,9 @@
 Photos
 
 ## Features
-- Sleep mode
 - Vim-like mode
+- WS2118 RGB Underglow
+- Sleep mode
 - Support for bspwm (change screens) [in progress]
 
 ## Components
