@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: joric
+      url-base: https://github.com/joric
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: joric
+      revision: jorne
       import: app/west.yml
   self:
     path: config
