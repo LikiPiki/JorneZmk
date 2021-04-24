@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: krikun98
-      url-base: github.com/krikun98/zmk
+      url-base: https://github.com/krikun98
   projects:
     - name: zmk
       remote: krikun98
