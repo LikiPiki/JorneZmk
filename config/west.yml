@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: joric
-      url-base: https://github.com/joric
+    - name: krikun98
+      url-base: github.com/krikun98/zmk
   projects:
     - name: zmk
-      remote: joric
-      revision: jorne
+      remote: krikun98
+      revision: main
       import: app/west.yml
   self:
     path: config
