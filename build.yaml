@@ -21,3 +21,11 @@ include:
     shield: jorne_left
   - board: nrfmicro_13_52833
     shield: jorne_right
+  - board: nrfmicro_13_52833
+    shield: jiran_left
+  - board: nrfmicro_13_52833
+    shield: jiran_right
+  - board: nrfmicro_13_52833
+    shield: lily58_left
+  - board: nrfmicro_13_52833
+    shield: lily58_right
